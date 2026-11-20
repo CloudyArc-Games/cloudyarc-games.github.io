@@ -1,0 +1,240 @@
+---
+import SiteLayout from "../layouts/SiteLayout.astro";
+
+const description = "A CloudyArc Games é um estúdio independente que cria jogos para descobrir, jogar e compartilhar.";
+---
+
+<SiteLayout title="CloudyArc Games — jogos independentes" {description}>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#inicio" aria-label="CloudyArc Games, início">
+        <span class="brand-mark" aria-hidden="true">C</span>
+        <span>CloudyArc <b>Games</b></span>
+      </a>
+      <nav aria-label="Navegação principal">
+        <a href="#jogos">Jogos</a>
+        <a href="#estudio">O estúdio</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero wrap" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span aria-hidden="true"></span> Estúdio independente de jogos</p>
+        <h1 id="hero-title">Um mundo de jogos, <em>feito para descobrir.</em></h1>
+        <p class="hero-lead">A CloudyArc Games cria experiências para jogar no seu ritmo — de desafios de combinar peças a aventuras cheias de ação.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#jogos">Conheça nossos jogos <span aria-hidden="true">↓</span></a>
+          <a class="text-link" href="#estudio">Sobre a CloudyArc</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="cloud cloud-back"></div>
+        <div class="cloud cloud-front"><span></span><span></span><span></span></div>
+        <div class="spark spark-one">✦</div><div class="spark spark-two">✧</div>
+        <div class="hero-caption">Ideias em movimento</div>
+      </div>
+    </section>
+
+    <section class="games-section" id="jogos" aria-labelledby="games-title">
+      <div class="wrap">
+        <div class="section-heading">
+          <div><p class="eyebrow">Do estúdio</p><h2 id="games-title">Jogos em destaque</h2></div>
+          <p>Projetos em diferentes fases, com novidades à medida que evoluem.</p>
+        </div>
+        <div class="game-grid">
+          <article class="game-card match-card">
+            <div class="game-art match-art" aria-hidden="true">
+              <div class="puzzle-board"><i>◆</i><i>●</i><i>✦</i><i>●</i><i>◆</i><i>✦</i><i>✦</i><i>◆</i><i>●</i></div>
+              <span class="art-label">MATCHZADA</span>
+            </div>
+            <div class="game-info">
+              <div class="game-meta"><span class="status status-blue"><i></i> Em desenvolvimento</span><span>Android</span></div>
+              <h3>Matchzada</h3>
+              <p>Combine peças, encontre boas jogadas e acompanhe o desenvolvimento de um novo jogo de puzzle para Android.</p>
+              <a href="/termos.html">Termos de Serviço <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="game-card hero-card">
+            <div class="game-art just-art" aria-hidden="true">
+              <div class="hero-sun"></div><div class="hero-mountain mountain-back"></div><div class="hero-mountain mountain-front"></div>
+              <div class="hero-silhouette"><span></span><i></i><b></b></div>
+              <span class="art-label">JUST A HERO</span>
+            </div>
+            <div class="game-info">
+              <div class="game-meta"><span class="status status-mint"><i></i> Protótipo jogável</span><span>HTML5</span></div>
+              <h3>Just a Hero</h3>
+              <p>Uma aventura em formato de protótipo para jogar direto no navegador e acompanhar no itch.io.</p>
+              <a href="https://andreilarr.itch.io/just-a-hero" target="_blank" rel="noopener noreferrer">Jogar no itch.io <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="studio-section wrap" id="estudio" aria-labelledby="studio-title">
+      <div class="studio-symbol" aria-hidden="true"><span>CA</span><i>✦</i></div>
+      <div class="studio-copy">
+        <p class="eyebrow">Quem somos</p>
+        <h2 id="studio-title">Jogos autorais, feitos com curiosidade.</h2>
+        <p>A CloudyArc Games é o estúdio independente por trás de Matchzada e Just a Hero. Cada projeto começa com uma ideia e cresce com experimentação, cuidado e vontade de criar algo divertido.</p>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contato" aria-labelledby="contact-title">
+      <div class="wrap contact-inner">
+        <div>
+          <p class="eyebrow">Fale com a gente</p>
+          <h2 id="contact-title">Tem uma dúvida sobre um jogo?</h2>
+          <p>Encontre as informações de contato e os Termos do Matchzada na página oficial do jogo.</p>
+        </div>
+        <a class="button button-outline" href="/termos.html">Suporte e Termos <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <a class="brand footer-brand" href="#inicio"><span class="brand-mark" aria-hidden="true">C</span><span>CloudyArc <b>Games</b></span></a>
+      <p>Jogos independentes, em construção.</p>
+      <div class="footer-links"><a href="/termos.html">Termos do Matchzada</a><a href="https://andreilarr.itch.io/just-a-hero" target="_blank" rel="noopener noreferrer">Just a Hero no itch.io</a></div>
+      <small>© 2026 CloudyArc Games</small>
+    </div>
+  </footer>
+</SiteLayout>
+
+<style>
+  .wrap { width: min(100% - 2.5rem, var(--wrap)); margin-inline: auto; }
+  .site-header { position: sticky; z-index: 10; top: 0; border-bottom: 1px solid rgb(155 180 220 / 12%); background: rgb(16 24 45 / 88%); backdrop-filter: blur(16px); }
+  .header-inner { width: min(100% - 2.5rem, var(--wrap)); min-height: 76px; margin: auto; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
+  .brand { display: inline-flex; align-items: center; gap: .7rem; color: var(--ink); font-size: .96rem; font-weight: 760; letter-spacing: -.025em; text-decoration: none; }
+  .brand b { color: var(--blue); }
+  .brand-mark { display: grid; width: 2rem; height: 2rem; place-items: center; border: 1px solid #6487bf; border-radius: .7rem; background: linear-gradient(145deg, #31578f, #1b2947); color: white; font-size: 1.05rem; }
+  nav { display: flex; align-items: center; gap: clamp(1rem, 3vw, 2.4rem); }
+  nav a { color: var(--muted); font-size: .92rem; font-weight: 600; text-decoration: none; }
+  nav a:hover { color: var(--ink); }
+  .hero { min-height: 555px; display: grid; grid-template-columns: 1.05fr .95fr; align-items: center; gap: 3rem; padding-block: 4.5rem 5rem; }
+  .hero-copy { position: relative; z-index: 1; }
+  .eyebrow { display: flex; align-items: center; gap: .65rem; margin: 0 0 1rem; color: var(--blue); font-size: .75rem; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; }
+  .eyebrow span { width: .5rem; height: .5rem; border-radius: 50%; background: var(--mint); box-shadow: 0 0 16px rgb(181 241 220 / 60%); }
+  h1, h2, h3, p { margin-top: 0; }
+  h1 { max-width: 700px; margin-bottom: 1.35rem; font-size: clamp(3.1rem, 7vw, 5.7rem); font-weight: 780; letter-spacing: -.075em; line-height: .98; }
+  h1 em { color: var(--blue); font-style: normal; }
+  .hero-lead { max-width: 34rem; margin-bottom: 1.8rem; color: var(--muted); font-size: clamp(1.02rem, 2vw, 1.18rem); line-height: 1.75; }
+  .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1.3rem; }
+  .button { display: inline-flex; align-items: center; justify-content: center; gap: .75rem; min-height: 48px; padding: .8rem 1.1rem; border: 1px solid transparent; border-radius: .75rem; font-size: .92rem; font-weight: 760; text-decoration: none; transition: transform .18s ease, background-color .18s ease, border-color .18s ease; }
+  .button:hover { transform: translateY(-2px); }
+  .button-primary { background: var(--blue); color: #10182d; }
+  .button-primary:hover { background: #c7deff; color: #10182d; }
+  .button-outline { border-color: #536b92; color: var(--ink); background: rgb(255 255 255 / 3%); }
+  .button-outline:hover { border-color: var(--blue); background: rgb(169 206 255 / 8%); color: white; }
+  .text-link { font-size: .92rem; font-weight: 650; }
+  .hero-art { position: relative; min-height: 370px; display: grid; place-items: center; isolation: isolate; }
+  .orbit { position: absolute; z-index: -1; width: min(90%, 380px); aspect-ratio: 1; border: 1px solid rgb(169 206 255 / 17%); border-radius: 50%; transform: rotate(-24deg) scaleY(.43); }
+  .orbit-one { width: 112%; border-color: rgb(169 206 255 / 13%); }
+  .orbit-two { transform: rotate(48deg) scaleY(.47); }
+  .cloud { position: absolute; width: 230px; height: 125px; border-radius: 80px; }
+  .cloud-back { width: 258px; height: 112px; background: #354b75; filter: blur(1px); transform: translate(15px, -24px); }
+  .cloud-front { display: flex; align-items: end; justify-content: center; gap: .55rem; padding: 0 2.3rem 1.8rem; background: linear-gradient(145deg, #a9ceff, #6f8dbb); box-shadow: 0 25px 65px rgb(1 8 22 / 38%); }
+  .cloud-front::before, .cloud-front::after, .cloud-front span { position: absolute; z-index: -1; border-radius: 50%; background: inherit; content: ""; }
+  .cloud-front::before { width: 106px; height: 106px; top: -49px; left: 32px; }
+  .cloud-front::after { width: 126px; height: 126px; top: -70px; left: 82px; }
+  .cloud-front span { width: 80px; height: 80px; top: -36px; right: 20px; }
+  .cloud-front span { position: relative; z-index: 1; width: 11px; height: 11px; background: #263c66; }
+  .cloud-front span:nth-child(2) { width: 16px; height: 16px; margin-bottom: 8px; background: var(--mint); }
+  .cloud-front span:nth-child(3) { background: #283d64; }
+  .spark { position: absolute; color: var(--mint); text-shadow: 0 0 22px rgb(181 241 220 / 38%); }
+  .spark-one { top: 20%; right: 13%; font-size: 2.2rem; }
+  .spark-two { bottom: 22%; left: 10%; color: var(--blue); font-size: 2.7rem; }
+  .hero-caption { position: absolute; right: 2%; bottom: 5%; color: #9eacc4; font-size: .76rem; letter-spacing: .12em; text-transform: uppercase; }
+  .games-section { padding: 5.6rem 0 6rem; border-block: 1px solid rgb(155 180 220 / 11%); background: linear-gradient(180deg, rgb(24 36 58 / 60%), rgb(17 27 48 / 77%)); }
+  .section-heading { display: flex; align-items: end; justify-content: space-between; gap: 2rem; margin-bottom: 2.2rem; }
+  .section-heading .eyebrow { margin-bottom: .65rem; }
+  .section-heading h2, .studio-copy h2, .contact-inner h2 { margin-bottom: 0; font-size: clamp(2rem, 4vw, 3.1rem); letter-spacing: -.055em; line-height: 1.08; }
+  .section-heading > p { max-width: 360px; margin-bottom: .15rem; color: var(--muted); line-height: 1.65; }
+  .game-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.35rem; }
+  .game-card { overflow: hidden; border: 1px solid var(--line); border-radius: 1.15rem; background: var(--surface); }
+  .game-art { position: relative; display: grid; min-height: 230px; place-items: center; overflow: hidden; }
+  .match-art { background: radial-gradient(ellipse at 72% 25%, #5476b8 0, #293e6b 30%, #192944 79%); }
+  .puzzle-board { display: grid; grid-template-columns: repeat(3, 56px); gap: 8px; transform: rotate(-9deg); filter: drop-shadow(0 20px 24px rgb(0 0 0 / 28%)); }
+  .puzzle-board i { display: grid; width: 56px; aspect-ratio: 1; place-items: center; border: 1px solid rgb(255 255 255 / 46%); border-radius: 15px; background: linear-gradient(145deg, #bce6ff, #698fcd); color: #233b67; font-size: 1.65rem; font-style: normal; }
+  .puzzle-board i:nth-child(3n + 2) { background: linear-gradient(145deg, #d0ffe9, #69bbab); }
+  .puzzle-board i:nth-child(3n) { background: linear-gradient(145deg, #ffe2a6, #d99c66); }
+  .hero-card .game-art { background: linear-gradient(155deg, #332d5e, #70457d 52%, #c27680); }
+  .hero-sun { position: absolute; top: 14%; right: 22%; width: 76px; aspect-ratio: 1; border-radius: 50%; background: #ffd89b; box-shadow: 0 0 46px rgb(255 216 155 / 45%); }
+  .hero-mountain { position: absolute; bottom: -30%; width: 115%; height: 75%; clip-path: polygon(0 100%, 34% 0, 53% 59%, 68% 22%, 100% 100%); }
+  .mountain-back { background: #41385f; transform: translateX(-10%); }
+  .mountain-front { height: 48%; background: #222e4c; transform: translateX(8%); }
+  .hero-silhouette { position: absolute; bottom: 29%; left: 50%; width: 12px; height: 32px; border-radius: 8px; background: #18233e; transform: translateX(-50%); }
+  .hero-silhouette span { position: absolute; top: -10px; left: 1px; width: 10px; height: 10px; border-radius: 50%; background: #18233e; }
+  .hero-silhouette i, .hero-silhouette b { position: absolute; top: 16px; width: 3px; height: 18px; background: #18233e; transform: rotate(18deg); }
+  .hero-silhouette i { left: 2px; transform: rotate(20deg); }
+  .hero-silhouette b { right: 2px; transform: rotate(-20deg); }
+  .art-label { position: absolute; right: 1.1rem; bottom: 1rem; color: rgb(255 255 255 / 77%); font-size: .67rem; font-weight: 850; letter-spacing: .19em; }
+  .game-info { padding: 1.25rem 1.35rem 1.45rem; }
+  .game-meta { display: flex; align-items: center; justify-content: space-between; gap: .8rem; color: #aab6ca; font-size: .76rem; }
+  .status { display: inline-flex; align-items: center; gap: .45rem; font-weight: 720; }
+  .status i { width: .45rem; height: .45rem; border-radius: 50%; background: currentColor; }
+  .status-blue { color: var(--blue); }
+  .status-mint { color: var(--mint); }
+  .game-info h3 { margin: 1.05rem 0 .55rem; font-size: 1.45rem; letter-spacing: -.035em; }
+  .game-info p { min-height: 3.3rem; margin-bottom: 1.1rem; color: var(--muted); font-size: .93rem; line-height: 1.65; }
+  .game-info > a { font-size: .9rem; font-weight: 740; text-decoration: none; }
+  .studio-section { display: grid; grid-template-columns: .7fr 1.3fr; align-items: center; gap: 3.5rem; padding-block: 6rem; }
+  .studio-symbol { position: relative; display: grid; width: min(100%, 270px); aspect-ratio: 1; place-items: center; justify-self: center; border: 1px solid #41577d; border-radius: 50%; background: radial-gradient(circle at 45% 38%, #344a74, #17243d 67%); box-shadow: 0 30px 70px rgb(0 0 0 / 20%); }
+  .studio-symbol::before, .studio-symbol::after { position: absolute; inset: 17%; border: 1px solid rgb(169 206 255 / 26%); border-radius: 50%; content: ""; transform: rotate(32deg) scaleY(.48); }
+  .studio-symbol::after { transform: rotate(-32deg) scaleY(.48); }
+  .studio-symbol span { color: var(--blue); font-size: 4.4rem; font-weight: 850; letter-spacing: -.13em; }
+  .studio-symbol i { position: absolute; top: 13%; right: 18%; color: var(--mint); font-size: 1.5rem; font-style: normal; }
+  .studio-copy .eyebrow { margin-bottom: .7rem; }
+  .studio-copy p:last-child { max-width: 620px; margin: 1.1rem 0 0; color: var(--muted); font-size: 1.03rem; line-height: 1.8; }
+  .contact-section { border-block: 1px solid rgb(155 180 220 / 13%); background: #18243a; }
+  .contact-inner { display: flex; align-items: center; justify-content: space-between; gap: 2rem; padding-block: 3rem; }
+  .contact-inner .eyebrow { margin-bottom: .6rem; }
+  .contact-inner h2 { font-size: clamp(1.7rem, 3vw, 2.35rem); }
+  .contact-inner p:last-child { margin: .65rem 0 0; color: var(--muted); line-height: 1.6; }
+  .site-footer { background: #0c1324; }
+  .footer-inner { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: .9rem 2rem; padding-block: 1.8rem; }
+  .footer-brand { grid-column: 1; }
+  .footer-inner > p { grid-column: 1; margin: 0; color: #9aa7bd; font-size: .82rem; }
+  .footer-links { grid-column: 2; grid-row: 1 / span 2; display: flex; flex-wrap: wrap; gap: 1rem; }
+  .footer-links a { font-size: .82rem; }
+  .footer-inner small { grid-column: 1 / -1; margin-top: .7rem; padding-top: 1rem; border-top: 1px solid #26334c; color: #8795ad; font-size: .75rem; }
+  @media (max-width: 780px) {
+    .hero { grid-template-columns: 1fr; gap: .25rem; padding-top: 4rem; }
+    .hero-art { min-height: 300px; }
+    .game-grid { gap: 1rem; }
+    .studio-section { grid-template-columns: .8fr 1.2fr; gap: 2rem; }
+  }
+  @media (max-width: 580px) {
+    .wrap, .header-inner { width: min(100% - 2rem, var(--wrap)); }
+    .header-inner { min-height: 68px; flex-wrap: wrap; gap: .65rem; padding-block: .65rem; }
+    .brand { gap: .5rem; font-size: .83rem; }
+    .brand-mark { width: 1.8rem; height: 1.8rem; }
+    nav { width: 100%; justify-content: space-between; gap: .8rem; }
+    nav a { font-size: .77rem; }
+    .hero { min-height: 0; overflow: hidden; padding-block: 3.5rem 3rem; }
+    .hero-copy { min-width: 0; }
+    h1 { max-width: 100%; overflow-wrap: anywhere; font-size: clamp(2.8rem, 13vw, 4.2rem); }
+    .hero-lead { overflow-wrap: anywhere; }
+    .hero-art { min-width: 0; min-height: 260px; overflow: hidden; }
+    .cloud { transform: scale(.87); }
+    .cloud-front { transform: scale(.87); }
+    .section-heading { display: block; }
+    .section-heading > p { margin-top: .8rem; }
+    .game-grid { grid-template-columns: 1fr; }
+    .game-art { min-height: 210px; }
+    .game-info p { min-height: 0; }
+    .studio-section { grid-template-columns: 1fr; gap: 2rem; padding-block: 4.5rem; }
+    .studio-symbol { width: 190px; }
+    .studio-symbol span { font-size: 3.5rem; }
+    .contact-inner { align-items: flex-start; flex-direction: column; padding-block: 2.4rem; }
+    .footer-inner { grid-template-columns: 1fr; }
+    .footer-links, .footer-inner > p, .footer-inner small { grid-column: 1; grid-row: auto; }
+    .footer-links { margin-top: .4rem; }
+  }
+</style>
